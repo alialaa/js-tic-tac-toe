@@ -9,7 +9,7 @@ module.exports = {
   	output: {
 	    path: path.join(__dirname, 'dist'),
 	    filename: '[name].js',
-	    publicPath: 'js-tic-tac-toe/dist/'
+	    publicPath: 'js-tic-tac-toe/'
   	},
   	devtool: "source-map",
 	module: {

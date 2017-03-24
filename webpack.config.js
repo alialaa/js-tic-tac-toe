@@ -9,12 +9,12 @@ module.exports = {
   	output: {
 	    path: path.join(__dirname, 'dist'),
 	    filename: '[name].js',
-	    // publicPath: 'js-tic-tac-toe/'
+	    publicPath: 'dist/'
   	},
   	devtool: "source-map",
 	module: {
 		rules: [
-		    {test: /\.(jpe?g|png|gif|svg)$/, loader: 'file-loader?name=assets/[name].[ext]'},
+		    {test: /\.(jpe?g|png|gif|svg)$/, loader: 'file-loader?name=assets/[name].[ext]&publicPath=../dist/'},
 			{ 
 				test: /\.js$/, 
 				exclude: /node_modules/, 
@@ -25,11 +25,11 @@ module.exports = {
 	            loader: extractSass.extract({
 	                loader: [{
 		                loader: "css-loader", options: {
-		                    sourceMap: true
+		                    // sourceMap: true
 		                }
 		            }, {
 		                loader: "sass-loader", options: {
-		                    sourceMap: true
+		                    // sourceMap: true
 		                }
 		            }]
 	            })

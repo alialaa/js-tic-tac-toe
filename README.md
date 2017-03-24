@@ -1,2 +1,1 @@
-# js-tic-tac-toe
-Tic Tac Toe with JavaScript
+## Tic Tac Toe with JavaScript

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe with Javascript</title>
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="dist/style.css">
+</head>
+<body>
+	
+	<div id="container">
+		<div id="sidebar_wrap">
+			<div id="sidebar">
+				<div id="charachters">
+					<div class="human">
+						<img src="src/images/human.png" alt="">
+						<div class="lh">
+							<img src="src/images/lhand.png" alt="">
+						</div>
+						<div class="rh">
+							<img src="src/images/rhand.png" alt="">
+						</div>
+						<div class="mouth">
+							<img src="src/images/mouth.png" alt="">
+						</div>
+						<div class="die"></div>
+					</div>
+					<div class="vs">vs</div>
+					<div class="robot">
+						<img src="src/images/robot.png" alt="">
+						<div class="lh">
+							<img src="src/images/lhand2.png" alt="">
+							<div class="gun">
+								<img src="src/images/gun.png" alt="">
+							</div>
+						</div>
+						<div class="rh">
+							<img src="src/images/rhand2.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<label>Depth</label>
+					<div class="depth_choices" id="depth">
+						<ul>
+							<li data-value="1">1</li>
+							<li data-value="2">2</li>
+							<li data-value="3">3</li>
+							<li data-value="4">4</li>
+							<li data-value="-1" class="active">Unlimited</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="field">
+					<label>Starting Player</label>
+					<div class="starting_player_choices" id="starting_player">
+						<ul>
+							<li data-value="1" class="active">Human</li>
+							<li data-value="0">Computer</li>
+						</ul>
+					</div>
+				</div>
+
+				<button id="newgame">New Game</button>
+				<p><a href="#">See a tutorial</a> / <a href="#">View on Github</a></p>
+			</div>
+		</div>
+		
+		<div id="board_wrap">
+			<div id="board"></div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+</html>
